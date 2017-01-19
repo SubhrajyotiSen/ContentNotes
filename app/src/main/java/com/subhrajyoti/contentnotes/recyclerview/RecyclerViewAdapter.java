@@ -35,7 +35,7 @@ public class RecyclerViewAdapter extends CursorRecyclerAdapter<MainViewHolder> {
     @Override
     public void onBindViewHolder(MainViewHolder holder, Cursor cursor) {
         holder.title.setText(cursor.getString(cursor.getColumnIndex(NoteContract.NoteEntry.COLUMN_TITLE)));
-        holder.desc.setText(cursor.getInt(cursor.getColumnIndex(NoteContract.NoteEntry.COLUMN_DESCRIPTION)));
+        holder.desc.setText(cursor.getString(cursor.getColumnIndex(NoteContract.NoteEntry.COLUMN_DESCRIPTION)));
 
     }
 
